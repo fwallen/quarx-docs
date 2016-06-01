@@ -1,4 +1,4 @@
-# Themes
+# Introduction
 
 Quarx has a full scope theming tool built right in. You can easily generate basic themes that can be built on and kept clear of your views. All the listed templates with a star are optional - otherwise everything else is required, for the basic support.
 

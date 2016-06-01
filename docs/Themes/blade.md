@@ -1,4 +1,4 @@
-# Blade
+# Blade Directives
 
 Quarx has some custom directives added to Blade which allows you to include files from your theme easily, as well as other parts.
 
@@ -21,7 +21,7 @@ Images will be provided as an array, and if you skip the tag then the method wil
 
 There is also the Quarx Service which can be run inside your blade views. Its as simple as {{ Quarx::method() }}
 
-Methods Available:
+Helper Methods Available:
 ------
 * menu('slug', 'optional-view-path')
 * images('tag')

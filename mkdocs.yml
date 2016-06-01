@@ -1,11 +1,2 @@
 site_name: Quarx
 theme: united
-pages:
-- Home: index.md
-- Themes: themes.md
-- Modules: modules.md
-- Commands: commands.md
-- Blade: blade.md
-- Middleware: middleware.md
-- Help: help.md
-- License: license.md
