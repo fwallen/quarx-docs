@@ -6,7 +6,7 @@ Quarx has a powerful CRUD builder. But lets say you want to have a custom module
 You can utilize redactor in your module by adding `.redactor` to any textarea class.
 
 ## Images and Files:
-Inside the redactor instance you can easily add images and files which you have uploaded to Quarx. Its as easy and click to have them added to the entry.
+Inside the redactor instance you can easily add images and files which you have uploaded to Quarx. Its as easy as clicking them to have them added to the entry.
 
 ## Front-end/ Theme
 When you generate a module the system will also generate a front-end or theme component which is kept in the `Publishes` directory. The is the portion of code that your visitors will see. You will need to publish this code using the `php artisan module:publish {name}` command.
