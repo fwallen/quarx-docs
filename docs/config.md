@@ -9,6 +9,7 @@ Quarx has a rather elaborate config with many options available. You can expand 
 | module-directory | Directory for custom Quarx modules |
 | appAdminEmail | Email address of your app Admin |
 | appAdminName | Name of your app Admin |
+| storage-location | Storage for files/ images (s3 or local) |
 | registrationAvailable | Enable or disable registration |
 | backend-theme | Theme for the backend |
 | maxFileUploadSize | Maximum file upload |
