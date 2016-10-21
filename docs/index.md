@@ -50,7 +50,7 @@ composer require yab/quarx
 * Add the following to your Providers:
 
 ```php
-Yab\Quarx\QuarxProvider::class
+Yab\Quarx\QuarxProvider::class,
 ```
 
 * Then run the vendor publish:
@@ -72,12 +72,12 @@ Now your done setup. Login, and start building your amazing new website!
 
 ## Complex Setup
 
-If you just want to add Laracogs to your existing application and already have your own
+If you just want to add Quarx to your existing application and already have your own
 
 * Add the following to your routes provider:
 
 ```php
-require app_path('Http/quarx-routes.php');
+require base_path('routes/quarx.php');
 ```
 
 * Add the following to your app.scss file, you will want to modify depending on your theme of choice.
@@ -96,6 +96,7 @@ php artisan migrate
 
 ```php
 'quarx' => \App\Http\Middleware\Quarx::class,
+'quarx-api' => \App\Http\Middleware\QuarxApi::class,
 ```
 
 In order to have modules load as well please add the following to your composer file:
@@ -104,23 +105,54 @@ In order to have modules load as well please add the following to your composer 
 ```
 This should be added to the autoloader below the App itself.
 
-### Quarx Access
+## Quarx Access
 Route to the administration dashboard is "/quarx/dashboard".
 
-Quarx requires Laracogs to run (only for the FormMaker), but Laracogs does not require you to use its version of roles. But you will still need to ensure some degree of control for Quarx's access. This is done in the Quarx Middleware, using the gate and the Quarx Policy. If you opt in to the roles system provided by Laracogs, then you can replace 'quarx' with admin to handle the Quarx authorization, if not, you will need to set your own security policy for access to Quarx. To do this simply add the Quarx policy to your `app/Providers/AuthServiceProvider.php` file, and ensure that any rules you wish it to use are in within the policy method. We suggest a policy similar to below.
+Quarx requires Laracogs to run (only for the FormMaker), but Quarx does not require you to use the Laracogs version of roles. But you will still need to ensure some degree of control for Quarx's access. This is done in the Quarx Middleware, using the gate and the Quarx Policy. If you opt in to the roles system provided by Laracogs, then you can replace 'quarx' with admin to handle the Quarx authorization, if not, you will need to set your own security policy for access to Quarx. To do this simply add the Quarx policy to your `app/Providers/AuthServiceProvider.php` file, and ensure that any rules you wish it to use are in within the policy method. We suggest a policy similar to below.
 
 Possible Quarx Policy:
 ```
-$gate->define('quarx', function ($user) {
+Gate::define('quarx', function ($user) {
     return (bool) $user;
 });
 ```
 
 Or Using Laracogs:
 ```
-$gate->define('quarx', function ($user) {
+Gate::define('quarx', function ($user) {
     return ($user->roles->first()->name === 'admin');
 });
+```
+
+## API Endpoints
+
+Quarx comes with a collection of handy API endpoints if you wish to use them. You can define your own policies for access and customize the middleware as you see fit.
+
+#### Token
+
+The basic Quarx API endpoints must carry the Quarx `apiToken` defined in the config for the app. This can be provided by adding the following to any request:
+
+```
+?token={your token}
+```
+
+** All published and public facing data will be available via the API by default.
+
+```
+/quarx/api/blog
+/quarx/api/blog/{id}
+/quarx/api/events
+/quarx/api/events/{id}
+/quarx/api/faqs
+/quarx/api/faqs/{id}
+/quarx/api/files
+/quarx/api/files/{id}
+/quarx/api/images
+/quarx/api/images/{id}
+/quarx/api/pages
+/quarx/api/pages/{id}
+/quarx/api/widgets
+/quarx/api/widgets/{id}
 ```
 
 Also Provides
