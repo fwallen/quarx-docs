@@ -1,40 +1,17 @@
-# Welcome to Quarx
+# Quarx Documentation
+
+
 
 Quarx is a CMS for Laravel applications. It provides numerous components that enable developers to put together powerful applications but also provide the means for people to edit the content of those powerful applications.
 
 Quarx comes with a module builder for all your custom CMS needs, as well as a module migration and publishing tools. So if you decide to reuse some modules on future projects you can easily publish thier assets seamlessly. If you wish to make your Quarx module into a PHP package, then you will need to have it publish its assets to the `quarx/modules` directory.
 
-<div class="row text-center buttons">
+<div class="well text-center buttons">
     <a class="github-button" href="https://github.com/YABhq/Quarx" data-icon="octicon-star" data-style="mega" data-count-href="/YABhq/Quarx/stargazers" data-count-api="/repos/YABhq/Quarx#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star YABhq/Quarx on GitHub">Star</a>
 
     <a class="github-button" href="https://github.com/YABhq/Quarx/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/YABhq/Quarx/network" data-count-api="/repos/YABhq/Quarx#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork YABhq/Quarx on GitHub">Fork</a>
 
-    <a class="github-button" href="https://github.com/YABhq/Quarx/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/YABhq/Quarx#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue YABhq/Quarx on GitHub">Issue</a>
-</div>
-
-<div class="row">
-    <div class="well text-center">
-        <span><a href="https://yabhq.com">A Yab Inc. Product</a></span>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6">
-        <a data-toggle="lightbox" id="lightbox1" href="http://quarx.info/docs/images/1.jpg">
-            <img class="img-responsive thumbnail" alt="Screen 1" src="http://quarx.info/docs/images/1.jpg" />
-        </a>
-        <a data-toggle="lightbox" id="lightbox2" href="http://quarx.info/docs/images/2.jpg">
-            <img class="img-responsive thumbnail" alt="Screen 2" src="http://quarx.info/docs/images/2.jpg" />
-        </a>
-    </div>
-    <div class="col-md-6">
-        <a data-toggle="lightbox" id="lightbox3" href="http://quarx.info/docs/images/3.jpg">
-            <img class="img-responsive thumbnail" alt="Screen 3" src="http://quarx.info/docs/images/3.jpg" />
-        </a>
-        <a data-toggle="lightbox" id="lightbox4" href="http://quarx.info/docs/images/4.jpg">
-            <img class="img-responsive thumbnail" alt="Screen 4" src="http://quarx.info/docs/images/4.jpg" />
-        </a>
-    </div>
+    <a class="github-button" href="https://github.com/YABhq/Quarx/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-href="/YABhq/Quarx/issues" data-count-api="/repos/YABhq/Quarx#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue YABhq/Quarx on GitHub">Issue</a>
 </div>
 
 ## Installation

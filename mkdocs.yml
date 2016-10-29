@@ -1,2 +1,43 @@
 site_name: Quarx
-theme: united
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/YabHq/Quarx'
+
+# Copyright
+copyright: 'Copyright (c) 2016 Yab Inc'
+
+# Documentation and theme
+docs_dir: 'docs'
+theme: material
+
+# Options
+extra:
+  logo: 'img/quarx-dark.png'
+  palette:
+    primary: 'ff6e40'
+    accent: 'deep orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  author:
+    github: 'YABhq'
+    twitter: 'YABdev'
+
+# Google Analytics
+google_analytics:
+  - 'UA-39444410-3'
+  - 'auto'
+
+extra_css: [ 'css/extra.css', 'css/ekko-lightbox.css' ]
+extra_javascript: [ 'js/jquery.js', 'js/ekko-lightbox.js' ]
+
+# Extensions
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'

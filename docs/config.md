@@ -6,15 +6,15 @@ Quarx has a rather elaborate config with many options available. You can expand 
 | ------ | ----- |
 | frontend-namespace | Sets the default namespace for the frontend code |
 | frontend-theme | The theme for the frontend |
+| load-modules | Do you want to load the external modules |
 | module-directory | Directory for custom Quarx modules |
-| appAdminEmail | Email address of your app Admin |
-| appAdminName | Name of your app Admin |
+| active-core-modules | Directory for custom Quarx modules |
+| max-file-upload-size | The maximum file size for upload (Must also be set in php.ini) |
 | storage-location | Storage for files/ images (s3 or local) |
-| registrationAvailable | Enable or disable registration |
+| backend-title | A title for the CMS (default: Quarx) |
 | backend-theme | Theme for the backend |
-| maxFileUploadSize | Maximum file upload |
+| registration-available | Enable or disable registration |
 | pagination | Results per pack in backend |
-| apiKey | Api Key for the Redactor photo and file injection |
-| apiToken | Api Token for the Redactor photo and file injection |
-| activeCoreModules | Active core modules |
+| api-key | Api Key for the Redactor photo and file injection |
+| api-token | Api Token for the Redactor photo and file injection, and the general external API calls |
 | forms | Forms config for core modules |

@@ -1,0 +1,44 @@
+.article .wrapper {
+    padding-top: 96px;
+}
+
+    .buttons {
+        margin: 48px 0;
+    }
+
+    iframe {
+        margin: 0 12px;
+    }
+
+.header, body {
+    background-color: #ff6e40;
+}
+
+.footer {
+    background-color: #333;
+}
+
+.row {
+    clear: both;
+}
+
+.well {
+    padding: 24px;
+    width: 100%;
+    background-color: #EEE;
+    border-radius: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.thumbnail {
+    border-radius: 8px;
+    border: 1px solid #EEE;
+    padding: 8px;
+}
