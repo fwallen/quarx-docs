@@ -11,8 +11,11 @@ Quarx has a rather elaborate config with many options available. You can expand 
 | load-modules | Do you want to load the external modules |
 | module-directory | Directory for custom Quarx modules |
 | active-core-modules | Directory for custom Quarx modules |
-| max-file-upload-size | The maximum file size for upload (Must also be set in php.ini) |
+| auto-translate | Automatically translate your content to other languages with Google Translate |
+| default-language | Your website's default language |
+| languages | Languages available in your website (enables their tabs in the editor) |
 | storage-location | Storage for files/ images (s3 or local) |
+| max-file-upload-size | The maximum file size for upload (Must also be set in php.ini) |
 | backend-title | A title for the CMS (default: Quarx) |
 | backend-theme | Theme for the backend |
 | registration-available | Enable or disable registration |
