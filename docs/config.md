@@ -4,6 +4,8 @@ Quarx has a rather elaborate config with many options available. You can expand 
 
 | Key | Description |
 | ------ | ----- |
+| db-prefix | Add a prefix to the Quarx content tables |
+| live-preview | Preview your site in the editor view |
 | frontend-namespace | Sets the default namespace for the frontend code |
 | frontend-theme | The theme for the frontend |
 | load-modules | Do you want to load the external modules |
