@@ -78,11 +78,17 @@ php artisan migrate
 'quarx-api' => \App\Http\Middleware\QuarxApi::class,
 ```
 
-In order to have modules load as well please add the following to your composer file:
+In order to have modules load as well please edit the autoload psr-4 portion to your composer file:
 ```php
-"Quarx\\": "quarx/",
+"autoload": {
+    ...
+    "psr-4": {
+        "App\\": "app/",
+        ...
+        "Quarx\\": "quarx/"
+        }
+}
 ```
-This should be added to the autoloader below the App itself.
 
 ## Quarx Access
 Route to the administration dashboard is "/quarx/dashboard".
