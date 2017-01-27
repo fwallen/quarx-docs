@@ -13,6 +13,14 @@ Easily add menus to your views with the menu blade directive.
 
 Add widgets to your views with the menu blade directive, just specify the SLUG.
 
+### &#64;image('id', 'class')
+
+Provides an image URL with an html tag and extra for adding a class
+
+### &#64;image_link('ID')
+
+Provides an image URL
+
 ### &#64;images('tag')
 
 Images will be provided as an array, and if you skip the tag then the method will return all images, otherwise it follows the tagging.

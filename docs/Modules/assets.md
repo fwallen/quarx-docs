@@ -10,7 +10,7 @@ So if you want to load your css file in your Sample module's Assets you could do
 `Assets/css/styles.css` is the file we're grabbing.
 
 ```
-{!! Minify::stylesheet(Quarx::moduleAsset('sample', 'css/styles.css', 'text/css')) !!}
+<link rel="stylesheet" type="text/css" href="{{ Quarx::moduleAsset('sample', 'css/styles.css', 'text/css') }}">
 ```
 
 Or we can load some JavaScript, and yes jQuery is already inside Quarx.
@@ -18,5 +18,7 @@ Or we can load some JavaScript, and yes jQuery is already inside Quarx.
 `Assets/js/module.js` is the file we're grabbing.
 
 ```
-{!! Minify::javascript(Quarx::moduleAsset('sample', 'js/module.js', 'application/javascript')) !!}
+<script type="text/javascript" src="{{ Quarx::moduleAsset('sample', 'js/module.js', 'application/javascript') }}"></script>
 ```
+
+

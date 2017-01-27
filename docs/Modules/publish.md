@@ -6,7 +6,7 @@ All custom modules will need to have their `Publishes` folder published in order
 php artisan module:publish
 ```
 
-Running this will place the files in the matching folders in your app. So if you want to have files put in migrations make sure your Publishes folder has a migration file in a directory like this:
+Running this will place the files in the matching folders in your app. So if you want to have files put in migrations make sure your `Publishes` folder has a migration file in a directory like this:
 
 ```
 Publishes/database/migrations/migration_file.php
