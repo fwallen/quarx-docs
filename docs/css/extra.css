@@ -10,8 +10,16 @@
         margin: 0 12px;
     }
 
-.header, body {
+.md-header {
     background-color: #ff6e40;
+}
+
+.md-nav__link--active, .md-nav__link:active {
+    color: #ff6e40;
+}
+
+.md-nav--secondary {
+    border-left: .4rem solid #ff6e40;
 }
 
 .footer {

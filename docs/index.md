@@ -148,7 +148,6 @@ The Quarx package also provides the following packages:
 * Yab/Laracogs
 
 <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -157,5 +156,4 @@ The Quarx package also provides the following packages:
 
   ga('create', 'UA-39444410-3', 'auto');
   ga('send', 'pageview');
-
 </script>
