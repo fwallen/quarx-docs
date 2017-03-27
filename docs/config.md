@@ -4,6 +4,8 @@ Quarx has a rather elaborate config with many options available. You can expand 
 
 | Key | Description |
 | ------ | ----- |
+| analytics | Choose an analytics engine for the dashboard (internal or google) |
+| pixabay | Your pixabay API code |
 | db-prefix | Add a prefix to the Quarx content tables |
 | live-preview | Preview your site in the editor view |
 | frontend-namespace | Sets the default namespace for the frontend code |
