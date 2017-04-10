@@ -38,3 +38,10 @@ Basic Theme Structure
     * img
 
 You have the ability to include other theme views into your view using the <code>&#64;theme('path')</code> directive with Blade. Otherwise its basically anything and everything Blade can do including any directives you wish to expand it with.
+
+## Check out more information:
+
+- [Blade](/themes/blade)
+- [Theme Generator](/themes/generator)
+- [Pages and Blocks](/themes/pages_and_blocks)
+- [Publishing](/themes/publishing)

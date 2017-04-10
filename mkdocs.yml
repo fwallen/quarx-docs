@@ -1,11 +1,11 @@
-site_name: 'Quarx: An elegant CMS for Laravel.'
+site_name: 'Quarx: A Decoupled CMS.'
 
 # Repository
 repo_name: 'Quarx'
 repo_url: 'https://github.com/YabHq/Quarx'
 
 # Copyright
-copyright: 'Copyright (c) 2016 Yab Inc'
+copyright: 'Copyright (c) Yab Inc'
 
 # Documentation and theme
 docs_dir: 'docs'

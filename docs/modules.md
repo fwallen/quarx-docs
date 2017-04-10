@@ -16,3 +16,14 @@ Pre-packaged Modules
 * Events
 
 You have the freedom to make any modules you want. You can use the `artisan module:make` or the `artisan module:crud` to generate them and then `artisan module:publish` to publish their contents.
+
+## Check out more information:
+
+- [Assets](/modules/assets)
+- [Composer](/modules/composer)
+- [Pages and Blocks](/modules/config)
+- [CRUD](/modules/crud)
+- [Files and Images](/modules/files_and_images)
+- [Make](/modules/make)
+- [Publishing](/modules/publish)
+- [Tutorials](/modules/tutorials)
