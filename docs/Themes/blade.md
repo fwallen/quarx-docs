@@ -5,6 +5,10 @@ Quarx has some custom directives added to Blade which allows you to include file
 ### &#64;theme('path.to.view')
 You can always add the <code>quarx-frontend::</code> namespace to the <code>&#64;include('path')</code> or instead use <code>&#64;theme('path')</code>.
 
+### &#64;block('slug')
+
+Create unique and elegant designs with block directives in your templates for pages.
+
 ### &#64;menu('slug')
 
 Easily add menus to your views with the menu blade directive.

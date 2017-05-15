@@ -38,6 +38,8 @@ Yab\Quarx\QuarxProvider::class,
 php artisan vendor:publish --provider="Yab\Quarx\QuarxProvider"
 ```
 
+!!! Tip "If you wish to use the publish datetime picker - set your app's timezone config to correspond with your location"
+
 ## Simple Setup
 
 If you're looking to do a simple website with a powerful CMS, and the only people logging on to the app are the CMS managers. Then you can run the setup command.
@@ -48,6 +50,13 @@ php artisan quarx:setup
 ```
 
 Now your done setup. Login, and start building your amazing new website!
+
+You can login as an admin with the following credentials:
+
+```
+U: admin@example.org
+P: admin
+```
 
 ## Complex Setup
 

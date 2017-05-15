@@ -20,6 +20,25 @@ composer require laravel/cashier
 
 Don't worry about the laravel cashier installation, the only points of interest are specified below:
 
+Add these to your `config/app.php`:
+
+```
+Yab\Quazar\QuazarModuleProvider::class,
+Laravel\Cashier\CashierServiceProvider::class,
+```
+
+Add the following to your `app/Http/Kernel.php` to the `routeMiddleware` array:
+```
+'isAjax' => \Yab\Quazar\Middleware\isAjax::class,
+```
+
+Add the following to your `app/Providers/RouteServiceProvider.php` to the `mapWebRoutes` method inside the group method as a closure:
+```
+require base_path('routes/quazar.php');
+```
+
+Don't worry about the laravel cashier installation, the only points of interest are specified below:
+
 Add the following to your `config/services.php`:
 
 ```php
