@@ -65,7 +65,16 @@ If you just want to add Quarx to your existing application and already have your
 * Add the following to your routes provider:
 
 ```php
-require base_path('routes/quarx.php');
+->group(base_path('routes/web.php'));
+```
+
+Into:
+
+```php
+->group(function() {
+    require base_path('routes/web.php');
+    require base_path('routes/quarx.php');
+});
 ```
 
 * Add the following to your app.scss file, you will want to modify depending on your theme of choice.
@@ -85,6 +94,8 @@ php artisan migrate
 ```php
 'quarx' => \App\Http\Middleware\Quarx::class,
 'quarx-api' => \App\Http\Middleware\QuarxApi::class,
+'quarx-language' => \App\Http\Middleware\QuarxLanguage::class,
+'quarx-analytics' => \Yab\Quarx\Middleware\QuarxAnalytics::class,
 ```
 
 In order to have modules load as well please edit the autoload psr-4 portion to your composer file:
@@ -96,7 +107,7 @@ In order to have modules load as well please edit the autoload psr-4 portion to 
         ...
         "Quarx\\": "quarx/"
         }
-}
+    }
 ```
 
 ## Quarx Access
@@ -117,6 +128,26 @@ Gate::define('quarx', function ($user) {
     return ($user->roles->first()->name === 'admin');
 });
 ```
+
+### Fun Route Trick
+
+If you're looking for clean URL pages without having to have the URL preceed with `page` or `p` then you can
+add this to your routes.
+
+> Make sure you put it at the bottom of the routes or it may conflict with others.
+
+```php
+Route::get('{url}', function ($url) {
+    return app(App\Http\Controllers\Quarx\PagesController::class)->show($url);
+})->where('url', '([A-z\d-\/_.]+)?');
+```
+
+### Roles & Permissions (simple setup only)
+
+With the roles middleware you can specify which roles are applicable separating them with pipes: `['middleware' => ['roles:admin|moderator|member']]`.
+
+The Quarx middleware utilizes the roles to ensure that a user is an 'admin'. But you can elaborate on this substantially, you can create multiple roles, and then set their access in your app, using the roles middleware. But, what happens when you want to allow multiple roles to access Quarx but only allow Admins to access your custom modules? You can use permissions for this. Similar to the roles middleware you can set the permissions `['middleware' => ['permissions:admin|quarx']]`. You can set custom permissions in `config/permissions.php`. This means you can set different role permissions for parts of your CMS, giving you even more control.
+
 
 ## API Endpoints
 
