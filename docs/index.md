@@ -60,7 +60,8 @@ P: admin
 
 ## Complex Setup
 
-If you just want to add Quarx to your existing application and already have your own
+If you just want to add Quarx to your existing application and already have your own.
+**Note:** This also requires that basic login functionality already exists in your app.
 
 * Add the following to your routes provider:
 
